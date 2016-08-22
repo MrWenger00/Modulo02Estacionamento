@@ -113,7 +113,7 @@ public class estacionamento {
 
 	static DefaultTableModel modeloEstacionamento;
 
-	static String[] camposVaga = new String[] { "N˙mero", "Andar", "Estado", "Placa", "Tipo da vaga" };
+	static String[] camposVaga = new String[] { "N√∫mero", "Andar", "Estado", "Placa", "Tipo da vaga" };
 	static String[] campos = new String[] { "Andar","Vaga","Placa", "Tipo do evento" };
 	static String tipoVaga = "";
 	
@@ -147,9 +147,9 @@ public class estacionamento {
 			carrosTerceiroAndar[i][3] = " ";
 			
 			if(i<=10){
-				carrosPrimeiroAndar[i][4] ="Priorit·rio";
-				carrosSegundoAndar[i][4] = "Priorit·rio";
-				carrosTerceiroAndar[i][4] = "Priorit·rio";
+				carrosPrimeiroAndar[i][4] ="Priorit√°rio";
+				carrosSegundoAndar[i][4] = "Priorit√°rio";
+				carrosTerceiroAndar[i][4] = "Priorit√°rio";
 			}else{
 				carrosPrimeiroAndar[i][4] ="Convencional";
 				carrosSegundoAndar[i][4] = "Convencional";
@@ -206,7 +206,7 @@ public class estacionamento {
 		carregarInicio.setIndeterminate(false);
 		carregarInicio.setVisible(true);
 
-		botaoComecar = new JButton("ComeÁar");
+		botaoComecar = new JButton("Come√ßar");
 		botaoComecar.setLayout(null);
 		botaoComecar.setVisible(false);
 		botaoComecar.setSize(100, 20);
@@ -216,7 +216,7 @@ public class estacionamento {
 		lbLogo.setBounds(150, 130, 300, 100);
 		lbLogo.setVisible(true);
 
-		lbApresentacao = new JLabel("Seja Bem-vindo ao mÛdulo: Controle de estacionamento");
+		lbApresentacao = new JLabel("Seja Bem-vindo ao m√≥dulo: Controle de estacionamento");
 		lbApresentacao.setBounds(100, 10, 500, 30);
 		lbApresentacao.setFont(new Font("Arial", Font.BOLD + Font.ITALIC, 16));
 		lbApresentacao.setVisible(true);
@@ -231,7 +231,7 @@ public class estacionamento {
 		lbApresentacao2.setFont(new Font("Arial", Font.BOLD + Font.ITALIC, 12));
 		lbApresentacao2.setVisible(true);
 
-		lbApresentacao3 = new JLabel("vers„o 1.0");
+		lbApresentacao3 = new JLabel("vers√£o 1.0");
 		lbApresentacao3.setBounds(0, 350, 100, 30);
 		lbApresentacao3.setFont(new Font("Arial", Font.BOLD + Font.ITALIC, 12));
 		lbApresentacao3.setForeground(Color.blue);
@@ -262,12 +262,12 @@ public class estacionamento {
 
 	static void iniciarComponentesTelaInicial() {
 
-		lbTabelaVagas = new JLabel("MovimentaÁ„o");
+		lbTabelaVagas = new JLabel("Movimenta√ß√£o");
 		lbTabelaVagas.setBounds(10, 10, 400, 30);
 		lbTabelaVagas.setFont(new Font("Arial", Font.BOLD + Font.ITALIC, 12));
 		lbTabelaVagas.setVisible(true);
 
-		lbStatusGeral = new JLabel("H· vagas para: ");
+		lbStatusGeral = new JLabel("H√° vagas para: ");
 		lbStatusGeral.setBounds(10, 260, 400, 30);
 		lbStatusGeral.setFont(new Font("Arial", Font.BOLD + Font.ITALIC, 12));
 		lbStatusGeral.setVisible(true);
@@ -283,7 +283,7 @@ public class estacionamento {
 		botaoEntrada.setSize(100, 20);
 		botaoEntrada.setLocation(10, 300);
 
-		botaoSaida = new JButton("SaÌda");
+		botaoSaida = new JButton("Sa√≠da");
 		botaoSaida.setLayout(null);
 		botaoSaida.setVisible(true);
 		botaoSaida.setSize(100, 20);
@@ -355,7 +355,7 @@ public class estacionamento {
 		lbTipoVaga.setFont(new Font("Arial", Font.BOLD + Font.ITALIC, 12));
 		lbTipoVaga.setVisible(true);
 
-		lbPlaca = new JLabel("Informe a Placa");
+		lbPlaca = new JLabel("Informe a Placa (Opcional)");
 		lbPlaca.setBounds(10, 60, 220, 30);
 		lbPlaca.setFont(new Font("Arial", Font.BOLD + Font.ITALIC, 12));
 		lbPlaca.setVisible(true);
@@ -366,7 +366,7 @@ public class estacionamento {
 		rbConvencional.setBounds(10, 30, 100, 20);
 		rbConvencional.setVisible(true);
 
-		rbPrioritario = new JRadioButton("Priorit·rio");
+		rbPrioritario = new JRadioButton("Priorit√°rio");
 		rbPrioritario.setSelected(false);
 		rbPrioritario.setLayout(null);
 		rbPrioritario.setBounds(140, 30, 100, 20);
@@ -452,7 +452,7 @@ public class estacionamento {
 		botaoAnterior.setLocation(10, 600);
 		botaoAnterior.setEnabled(false);
 		
-		botaoProximo = new JButton("PrÛximo");
+		botaoProximo = new JButton("Pr√≥ximo");
 		botaoProximo.setLayout(null);
 		botaoProximo.setVisible(true);
 		botaoProximo.setSize(100, 20);
@@ -484,7 +484,7 @@ public class estacionamento {
 		lbLegenda1.setVisible(true);
 		lbLegenda1.setFont(new Font("Arial", Font.BOLD + Font.ITALIC, 10));
 		
-		lbLegenda2 = new JLabel("Vagas para carros priorit·rios");
+		lbLegenda2 = new JLabel("Vagas para carros priorit√°rios");
 		lbLegenda2.setBounds(30, 390, 300, 20);
 		lbLegenda2.setVisible(true);
 		lbLegenda2.setFont(new Font("Arial", Font.BOLD + Font.ITALIC, 10));
@@ -523,7 +523,7 @@ public class estacionamento {
 	}
 
 	static void criarTabelas() {
-		vagas.setText("<BODY>" + "<CENTER><FONT COLOR=BLUE SIZE=6>Mapa de vagas no " + andar + "∫ Andar</FONT></CENTER>"
+		vagas.setText("<BODY>" + "<CENTER><FONT COLOR=BLUE SIZE=6>Mapa de vagas no " + andar + "¬∫ Andar</FONT></CENTER>"
 				+ "<BR>" + "<TABLE BORDER=1 align=center>" + "<TR> " 
 				+ "<TD bgcolor=" + definirCor(andar, 0, "p") + " style=" + "'width: 50px'" + "><CENTER>01 </TD>" 
 				+ "<TD bgcolor=" + definirCor(andar, 1, "p") + " style=" + "'width: 50px'" + "><CENTER>02 </TD>"
@@ -695,17 +695,17 @@ public class estacionamento {
 			
 			@Override
 			public void windowLostFocus(WindowEvent e) {
-				/* MÈtodo sem implementaÁ„o necess·ria */				
+				/* M√©todo sem implementa√ß√£o necess√°ria */				
 			}
 			
 			@Override
 			public void windowGainedFocus(WindowEvent e) {
 				if(!haVagas()){
 					botaoEntrada.setEnabled(false);
-					lbStatusGeral.setText("N„o h· vagas");
+					lbStatusGeral.setText("N√£o h√° vagas");
 				}else{
 					botaoEntrada.setEnabled(true);
-					lbStatusGeral.setText("H· vagas para: "+verificarSetoresLivres());
+					lbStatusGeral.setText("H√° vagas para: "+verificarSetoresLivres());
 					if(totalVagasOcupadas<1){
 						botaoSaida.setEnabled(false);
 					}else{
@@ -791,48 +791,48 @@ public class estacionamento {
 			
 			@Override
 			public void windowIconified(WindowEvent e) {
-				/* MÈtodo sem implementaÁ„o necess·ria */				
+				/* M√©todo sem implementa√ß√£o necess√°ria */				
 			}
 			
 			@Override
 			public void windowDeiconified(WindowEvent e) {
-				/* MÈtodo sem implementaÁ„o necess·ria */				
+				/* M√©todo sem implementa√ß√£o necess√°ria */				
 			}
 			
 			@Override
 			public void windowDeactivated(WindowEvent e) {
-				/* MÈtodo sem implementaÁ„o necess·ria */				
+				/* M√©todo sem implementa√ß√£o necess√°ria */				
 			}
 			
 			@Override
 			public void windowClosing(WindowEvent e) {
-				/* MÈtodo sem implementaÁ„o necess·ria */				
+				/* M√©todo sem implementa√ß√£o necess√°ria */				
 			}
 			
 			@Override
 			public void windowClosed(WindowEvent e) {
-				/* MÈtodo sem implementaÁ„o necess·ria */				
+				/* M√©todo sem implementa√ß√£o necess√°ria */				
 			}
 			
 			@Override
 			public void windowActivated(WindowEvent e) {
-				/* MÈtodo sem implementaÁ„o necess·ria */				
+				/* M√©todo sem implementa√ß√£o necess√°ria */				
 			}
 		});
 		rbConvencional.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseReleased(MouseEvent e) {
-				/* MÈtodo sem implementaÁ„o necess·ria */
+				/* M√©todo sem implementa√ß√£o necess√°ria */
 			}
 
 			@Override
 			public void mousePressed(MouseEvent e) {
-				/* MÈtodo sem implementaÁ„o necess·ria */
+				/* M√©todo sem implementa√ß√£o necess√°ria */
 			}
 
 			@Override
 			public void mouseExited(MouseEvent e) {
-				/* MÈtodo sem implementaÁ„o necess·ria */
+				/* M√©todo sem implementa√ß√£o necess√°ria */
 			}
 
 			@Override
@@ -854,17 +854,17 @@ public class estacionamento {
 		rbPrioritario.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseReleased(MouseEvent e) {
-				/* MÈtodo sem implementaÁ„o necess·ria */
+				/* M√©todo sem implementa√ß√£o necess√°ria */
 			}
 
 			@Override
 			public void mousePressed(MouseEvent e) {
-				/* MÈtodo sem implementaÁ„o necess·ria */
+				/* M√©todo sem implementa√ß√£o necess√°ria */
 			}
 
 			@Override
 			public void mouseExited(MouseEvent e) {
-				/* MÈtodo sem implementaÁ„o necess·ria */
+				/* M√©todo sem implementa√ß√£o necess√°ria */
 			}
 
 			@Override
@@ -886,17 +886,17 @@ public class estacionamento {
 		rbMoto.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseReleased(MouseEvent e) {
-				/* MÈtodo sem implementaÁ„o necess·ria */
+				/* M√©todo sem implementa√ß√£o necess√°ria */
 			}
 
 			@Override
 			public void mousePressed(MouseEvent e) {
-				/* MÈtodo sem implementaÁ„o necess·ria */
+				/* M√©todo sem implementa√ß√£o necess√°ria */
 			}
 
 			@Override
 			public void mouseExited(MouseEvent e) {
-				/* MÈtodo sem implementaÁ„o necess·ria */
+				/* M√©todo sem implementa√ß√£o necess√°ria */
 			}
 
 			@Override
@@ -1041,7 +1041,7 @@ public class estacionamento {
 		}
 	
 		if(totalVagasPrioritario>0){
-			texto +=" Carro priorit·rio.";
+			texto +=" Carro priorit√°rio.";
 		}
 		return texto;
 	}
@@ -1099,17 +1099,17 @@ public class estacionamento {
 		
 		if(andar==1){
 			String placa = carrosPrimeiroAndar[v][3];
-			gravarEvento(String.valueOf(andar), String.valueOf(vaga+1),placa, "SaÌda");
+			gravarEvento(String.valueOf(andar), String.valueOf(vaga+1),placa, "Sa√≠da");
 			carrosPrimeiroAndar[v][2] = "livre";
 			carrosPrimeiroAndar[v][3] = "";
 		}else if(andar==2){
 			String placa = carrosSegundoAndar[v][3];
-			gravarEvento(String.valueOf(andar), String.valueOf(vaga+1),placa, "SaÌda");
+			gravarEvento(String.valueOf(andar), String.valueOf(vaga+1),placa, "Sa√≠da");
 			carrosSegundoAndar[v][2] = "livre";
 			carrosSegundoAndar[v][3] = "";
 		}else if(andar==3){
 			String placa = carrosTerceiroAndar[v][3];
-			gravarEvento(String.valueOf(andar), String.valueOf(vaga+1),placa, "SaÌda");
+			gravarEvento(String.valueOf(andar), String.valueOf(vaga+1),placa, "Sa√≠da");
 			carrosTerceiroAndar[v][2] = "livre";
 			carrosTerceiroAndar[v][3] = "";
 		}
@@ -1124,17 +1124,17 @@ public class estacionamento {
 		
 		if(andar==1){
 			String placa = motoPrimeiroAndar[v][3];
-			gravarEvento(String.valueOf(andar), String.valueOf(vaga+1),placa, "SaÌda");
+			gravarEvento(String.valueOf(andar), String.valueOf(vaga+1),placa, "Sa√≠da");
 			motoPrimeiroAndar[v][2] = "livre";
 			motoPrimeiroAndar[v][3] = "";
 		}else if(andar==2){
 			String placa = motoSegundoAndar[v][3];
-			gravarEvento(String.valueOf(andar), String.valueOf(vaga+1),placa, "SaÌda");
+			gravarEvento(String.valueOf(andar), String.valueOf(vaga+1),placa, "Sa√≠da");
 			motoSegundoAndar[v][2] = "livre";
 			motoSegundoAndar[v][3] = "";
 		}else if(andar==3){
 			String placa = motoTerceiroAndar[v][3];
-			gravarEvento(String.valueOf(andar), String.valueOf(vaga+1),placa, "SaÌda");
+			gravarEvento(String.valueOf(andar), String.valueOf(vaga+1),placa, "Sa√≠da");
 			motoTerceiroAndar[v][2] = "livre";
 			motoTerceiroAndar[v][3] = "";
 		}
@@ -1185,7 +1185,7 @@ public class estacionamento {
 		tela.setLocation(((width - largura) / 2), ((height - altura) / 2));
 		/* Cria a tela com o tamanho definido */
 		tela.setSize(largura, altura);
-		/* define que o tamanho da tela n„o poder· ser alterado pelo usu·rio */
+		/* define que o tamanho da tela n√£o poder√° ser alterado pelo usu√°rio */
 		tela.setResizable(false);
 		tela.addComponentListener(/**/
 
